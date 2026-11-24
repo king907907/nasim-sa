@@ -1,0 +1,43 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "نَسيم",
+      "hasCanvas": false,
+      "bodyTextLen": 913,
+      "bodyTextHash": "439a77957e0c40cfac99591d424e886c8cddd66f125ae6f024494b959cac9c66",
+      "bodyTextPrefix": "نَسيم °م جدة الثلاثاء, 10 نوفمبر, 03:00 م 31° غائم جزئياً 31 24 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "نَسيم",
+      "hasCanvas": false,
+      "bodyTextLen": 913,
+      "bodyTextHash": "439a77957e0c40cfac99591d424e886c8cddd66f125ae6f024494b959cac9c66",
+      "bodyTextPrefix": "نَسيم °م جدة الثلاثاء, 10 نوفمبر, 03:00 م 31° غائم جزئياً 31 24 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: title changed (\"جدة — نَسيم\" -> \"نَسيم\")",
+    "desktop: body text replaced (similar length, page start changed)",
+    "mobile: title changed (\"جدة — نَسيم\" -> \"نَسيم\")",
+    "mobile: body text replaced (similar length, page start changed)"
+  ]
+}

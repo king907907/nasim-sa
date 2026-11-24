@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face {
+    font-family: "Plex Arabic";
+    src: url("../fonts/IBMPlexSansArabic-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Plex Mono";
+    src: url("../fonts/IBMPlexMono-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #07090c;
+  }
+  .card {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    background:
+      #07090c
+      url("bg.jpg")
+      center / cover
+      no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .veil {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 62% 58% at 50% 50%,
+        rgba(7, 9, 12, 0.78) 0%,
+        rgba(7, 9, 12, 0.42) 46%,
+        rgba(7, 9, 12, 0.08) 72%,
+        rgba(7, 9, 12, 0) 100%);
+  }
+  .lockup {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    padding: 0.12em 0.08em 0.02em;
+    font-family: "Plex Arabic", sans-serif;
+    font-weight: 500;
+    font-size: 252px;
+    line-height: 0.92;
+    color: #e8eef3;
+    letter-spacing: 0;
+  }
+  .rule {
+    width: 72px;
+    height: 1px;
+    margin: 10px 0 16px;
+    background: #3dceb4;
+    opacity: 0.85;
+  }
+  .temp {
+    margin: 0;
+    font-family: "Plex Mono", ui-monospace, monospace;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1;
+    color: #3dceb4;
+    letter-spacing: 0.22em;
+    padding-left: 0.22em;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="veil"></div>
+    <div class="lockup">
+      <h1 dir="rtl" lang="ar">نَسيم</h1>
+      <div class="rule"></div>
+      <p class="temp" dir="ltr">21.6°C</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+import type { Lang } from "./store";
+
+const AR = {
+  settings: "الإعدادات",
+  favorites: "المدن المفضلة",
+  manageFav: "إدارة المدن المفضلة",
+  notifications: "الاشعارات",
+  yellow: "الإنذار الأصفر",
+  orange: "الإنذار البرتقالي",
+  red: "الإنذار الأحمر",
+  heat: "اعدادات الحرارة",
+  celsius: "درجة مئوية",
+  fahrenheit: "فهرنهايت",
+  kelvin: "كيلفن",
+  language: "تغيير اللغة",
+  theme: "وضع التطبيق",
+  auto: "تلقائي",
+  day: "نهاري",
+  night: "ليلي",
+  blue: "أزرق ليلي",
+  vibrate: "خاصية الإهتزاز",
+  alerts: "الإنذار المبكر",
+  alertList: "قائمة الإنذارات",
+  alertMap: "خريطة الإنذارات",
+  allAlerts: "جميع التنبيهات",
+  install: "تثبيت التطبيق",
+  none: "لا توجد تنبيهات حالياً",
+  about: "الإنذارات صادرة من المركز الوطني للأرصاد، وليست تقديراً من التطبيق.",
+  rights: "المصدر: المركز الوطني للأرصاد",
+  home: "الرئيسية",
+  maps: "الخرائط",
+  radar: "رادار الطقس",
+  shorts: "شورت",
+  emptyFav: "لا توجد مدن بعد. أضفها من النجمة.",
+};
+
+const EN: typeof AR = {
+  settings: "Settings",
+  favorites: "Favourite cities",
+  manageFav: "Manage favourite cities",
+  notifications: "Notifications",
+  yellow: "Yellow alert",
+  orange: "Orange alert",
+  red: "Red alert",
+  heat: "Temperature",
+  celsius: "Celsius",
+  fahrenheit: "Fahrenheit",
+  kelvin: "Kelvin",
+  language: "Language",
+  theme: "Appearance",
+  auto: "Automatic",
+  day: "Day",
+  night: "Night",
+  blue: "Night blue",
+  vibrate: "Haptics",
+  alerts: "Early warning",
+  alertList: "Alert list",
+  alertMap: "Alert map",
+  allAlerts: "All alerts",
+  install: "Install app",
+  none: "No alerts right now",
+  about: "Alerts come from the National Center for Meteorology, not an in-app estimate.",
+  rights: "Source: National Center for Meteorology",
+  home: "Home",
+  maps: "Maps",
+  radar: "Radar",
+  shorts: "Shorts",
+  emptyFav: "No cities yet. Add one with the star.",
+};
+
+const PACKS: Record<Lang, typeof AR> = {
+  ar: AR,
+  en: EN,
+  fr: { ...EN, settings: "Réglages", favorites: "Villes favorites", manageFav: "Gérer les favoris", notifications: "Notifications", yellow: "Alerte jaune", orange: "Alerte orange", red: "Alerte rouge", heat: "Température", celsius: "Celsius", fahrenheit: "Fahrenheit", kelvin: "Kelvin", language: "Langue", theme: "Apparence", auto: "Automatique", day: "Jour", night: "Nuit", blue: "Bleu nuit", vibrate: "Vibrations", alerts: "Alerte précoce", alertList: "Liste des alertes", alertMap: "Carte des alertes", allAlerts: "Toutes les alertes", install: "Installer", none: "Aucune alerte", home: "Accueil", maps: "Cartes", radar: "Radar" },
+  fa: { ...EN, settings: "تنظیمات", favorites: "شهرهای محبوب", manageFav: "مدیریت شهرها", notifications: "اعلان‌ها", yellow: "هشدار زرد", orange: "هشدار نارنجی", red: "هشدار قرمز", heat: "دما", celsius: "سلسیوس", fahrenheit: "فارنهایت", kelvin: "کلوین", language: "زبان", theme: "حالت برنامه", auto: "خودکار", day: "روز", night: "شب", blue: "آبی شب", vibrate: "لرزش", alerts: "هشدار زودهنگام", alertList: "فهرست هشدار", alertMap: "نقشه هشدار", allAlerts: "همه هشدارها", install: "نصب", none: "هشداری نیست", home: "خانه", maps: "نقشه‌ها", radar: "رادار" },
+  ms: { ...EN, settings: "Tetapan", favorites: "Bandar kegemaran", manageFav: "Urus bandar", notifications: "Pemberitahuan", yellow: "Amaran kuning", orange: "Amaran jingga", red: "Amaran merah", heat: "Suhu", language: "Bahasa", theme: "Paparan", auto: "Automatik", day: "Siang", night: "Malam", blue: "Biru malam", vibrate: "Getaran", alerts: "Amaran awal", alertList: "Senarai amaran", alertMap: "Peta amaran", allAlerts: "Semua amaran", install: "Pasang", none: "Tiada amaran", home: "Utama", maps: "Peta", radar: "Radar" },
+  ur: { ...EN, settings: "ترتیبات", favorites: "پسندیدہ شہر", manageFav: "شہر منظم کریں", notifications: "اطلاعات", yellow: "پیلا انتباہ", orange: "نارنجی انتباہ", red: "سرخ انتباہ", heat: "درجہ حرارت", celsius: "سیلسیئس", fahrenheit: "فارن ہائیٹ", kelvin: "کیلون", language: "زبان", theme: "انداز", auto: "خودکار", day: "دن", night: "رات", blue: "نیلی رات", vibrate: "تھرتھراہٹ", alerts: "ابتدائی انتباہ", alertList: "فہرست", alertMap: "نقشہ", allAlerts: "تمام انتباہات", install: "انسٹال", none: "کوئی انتباہ نہیں", home: "ہوم", maps: "نقشے", radar: "ریڈار" },
+  tr: { ...EN, settings: "Ayarlar", favorites: "Favori şehirler", manageFav: "Şehirleri yönet", notifications: "Bildirimler", yellow: "Sarı uyarı", orange: "Turuncu uyarı", red: "Kırmızı uyarı", heat: "Sıcaklık", celsius: "Santigrat", fahrenheit: "Fahrenhayt", kelvin: "Kelvin", language: "Dil", theme: "Görünüm", auto: "Otomatik", day: "Gündüz", night: "Gece", blue: "Gece mavisi", vibrate: "Titreşim", alerts: "Erken uyarı", alertList: "Uyarı listesi", alertMap: "Uyarı haritası", allAlerts: "Tüm uyarılar", install: "Yükle", none: "Uyarı yok", home: "Ana sayfa", maps: "Haritalar", radar: "Radar" },
+  es: { ...EN, settings: "Ajustes", favorites: "Ciudades favoritas", manageFav: "Gestionar favoritas", notifications: "Avisos", yellow: "Alerta amarilla", orange: "Alerta naranja", red: "Alerta roja", heat: "Temperatura", language: "Idioma", theme: "Apariencia", auto: "Automático", day: "Día", night: "Noche", blue: "Azul noche", vibrate: "Vibración", alerts: "Alerta temprana", alertList: "Lista de alertas", alertMap: "Mapa de alertas", allAlerts: "Todas las alertas", install: "Instalar", none: "Sin alertas", home: "Inicio", maps: "Mapas", radar: "Radar" },
+  id: { ...EN, settings: "Pengaturan", favorites: "Kota favorit", manageFav: "Kelola kota", notifications: "Notifikasi", yellow: "Peringatan kuning", orange: "Peringatan oranye", red: "Peringatan merah", heat: "Suhu", language: "Bahasa", theme: "Tampilan", auto: "Otomatis", day: "Siang", night: "Malam", blue: "Biru malam", vibrate: "Getar", alerts: "Peringatan dini", alertList: "Daftar peringatan", alertMap: "Peta peringatan", allAlerts: "Semua peringatan", install: "Pasang", none: "Tidak ada peringatan", home: "Beranda", maps: "Peta", radar: "Radar" },
+};
+
+export type CopyKey = keyof typeof AR;
+
+export function t(lang: Lang, key: CopyKey): string {
+  return PACKS[lang]?.[key] ?? AR[key];
+}

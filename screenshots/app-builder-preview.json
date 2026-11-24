@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "جدة — نَسيم",
+      "hasCanvas": false,
+      "bodyTextLen": 1027,
+      "bodyTextHash": "a141686e6e331afe2ed6182b063e81fc301f5998023e772c75a61aa4af047257",
+      "bodyTextPrefix": "نَسيم °م مناطق السعودية الـ ١٣ كلها تثبيت نَسيم شرح الإضافة للشا",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "جدة — نَسيم",
+      "hasCanvas": false,
+      "bodyTextLen": 1027,
+      "bodyTextHash": "a141686e6e331afe2ed6182b063e81fc301f5998023e772c75a61aa4af047257",
+      "bodyTextPrefix": "نَسيم °م مناطق السعودية الـ ١٣ كلها تثبيت نَسيم شرح الإضافة للشا",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
